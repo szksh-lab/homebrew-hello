@@ -6,21 +6,21 @@ class Hello < Formula
   desc "Hello
 "
   homepage "https://github.com/szksh-lab/hello"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/szksh-lab/hello/releases/download/v0.1.1/hello_darwin_amd64.tar.gz"
-      sha256 "5a342b8937b1a760b3c7c58ac344dbe98f2bb341ebccb79fdb2f428250393de0"
+      url "https://github.com/szksh-lab/hello/releases/download/v0.1.2/hello_darwin_amd64.tar.gz"
+      sha256 "668a6b119c224d3de7dc661324387031fe56a6dc82ba9d35bc5ce8b59e1a946f"
 
       def install
         bin.install "hello"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/szksh-lab/hello/releases/download/v0.1.1/hello_darwin_arm64.tar.gz"
-      sha256 "bdab00c13b3089543f3c26b980122c6adeae31bf222cbefa6065baacceb60315"
+      url "https://github.com/szksh-lab/hello/releases/download/v0.1.2/hello_darwin_arm64.tar.gz"
+      sha256 "7b239f9143d36bb69a391f10f8980d4d15e1702a783a4f625458e4485aecfb0f"
 
       def install
         bin.install "hello"
@@ -31,8 +31,8 @@ class Hello < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/szksh-lab/hello/releases/download/v0.1.1/hello_linux_amd64.tar.gz"
-        sha256 "e9d01a46c89da53b8ad7ff2dcd8a99831865914471fd4ef39beeed6c72cfb49e"
+        url "https://github.com/szksh-lab/hello/releases/download/v0.1.2/hello_linux_amd64.tar.gz"
+        sha256 "41d0825112e976b55d2d426f8286ecf55235d9fa279efae87a25031064bb2fdf"
 
         def install
           bin.install "hello"
@@ -41,8 +41,8 @@ class Hello < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/szksh-lab/hello/releases/download/v0.1.1/hello_linux_arm64.tar.gz"
-        sha256 "98e5e43c28575c06f788e2628e9f5b88e0989fed1729bde9292b7c52e99924e4"
+        url "https://github.com/szksh-lab/hello/releases/download/v0.1.2/hello_linux_arm64.tar.gz"
+        sha256 "9940e6690184db7cab7137d305895509a280ba4c91c3e24f4085328594b51c6a"
 
         def install
           bin.install "hello"
